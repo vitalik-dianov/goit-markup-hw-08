@@ -1,0 +1,185 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 30px);
+    max-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
+}
+.modal-close {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $accent-color;
+    cursor: pointer;
+  }
+}
+.modal-title {
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.modal-label {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+  width: 100%;
+}
+.modal-comment {
+  margin-bottom: 20px;
+}
+.modal-input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  padding-left: 42px;
+  margin-top: 4px;
+  min-height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    max-width: 448px;
+  }
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+  &:focus + .input-icon {
+    fill: $accent-color;
+  }
+}
+.input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-comment-area {
+  width: 100%;
+  min-height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    max-width: 448px;
+  }
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
+}
+.modal-agree {
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  display: block;
+  line-height: 1.16;
+  padding-left: 24px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    padding-left: 36px;
+  }
+}
+.modal-agree-link {
+  font-size: 12px;
+  color: $accent-color;
+  text-decoration: underline;
+  line-height: 1.16;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.modal-submit {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: $accent-color;
+  color: $primary-white-color;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

@@ -13,9 +13,9 @@
   &--black {
     @extend %logo;
     color: $primary-black-color;
-    // margin-right: 93px;
+    
     @media screen and (min-width: 768px) {
-      // margin-right: 88px;
+      
       margin-right: auto;
     }
   }

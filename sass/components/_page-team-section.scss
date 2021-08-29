@@ -14,32 +14,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
-
-  // flex-basis: calc(100% / 1 - 30px);
-  @media screen and (min-width: 768px) {
-    // flex-basis: calc(100% / 2 - 30px);
-  }
-
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   flex-wrap: nowrap;
-  // }
 }
 .page-team__card-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .page-team__card {
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
   font-size: 0;
-  // width: 270px;
   text-align: center;
 
   border-radius: 0px 0px 4px 4px;

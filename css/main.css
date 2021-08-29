@@ -668,13 +668,13 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: -30px;
-  margin-right: -30px;
+  margin-left: -30px;
 }
 
 .page-features__item {
   min-width: 270px;
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -807,7 +807,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
 }
 
@@ -817,7 +817,7 @@ ul {
 }
 
 .page-team__card {
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
   font-size: 0;
   text-align: center;
@@ -934,12 +934,37 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: -30px;
-  margin-right: -30px;
+  margin-left: -30px;
 }
 
 .page-partners__item {
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-left: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-partners__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-partners__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-partners__item {
+    -ms-flex-preferred-size: calc(100% / 6 - 30px);
+        flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .page-partners__link {
@@ -952,10 +977,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   color: #afb1b8;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1258,14 +1279,14 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: -30px;
-  margin-right: -30px;
+  margin-left: -30px;
 }
 
 .portfolio__item {
   -ms-flex-preferred-size: calc(100% / 1 - 30px);
       flex-basis: calc(100% / 1 - 30px);
   margin-bottom: 30px;
-  margin-right: 30px;
+  margin-left: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
